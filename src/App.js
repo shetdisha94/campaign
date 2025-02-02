@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import PostDetails from "./components/PostDetails/PostDetailsComponent";
 
 const Main = () => {
-  console.log("Main component");
   return (
-    <div>
-      <h1>React App</h1>
+    <div className="main-app">
+      <PostDetails />
     </div>
   );
 };
