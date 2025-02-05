@@ -1,38 +1,50 @@
 .post-details {
-  border: 1px solid black;
-  height: 450px;
+  /* border: 1px solid pink; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .post-images {
-  border: 1px solid black;
+  /* border: 1px solid grey; */
   width: inherit;
-  height: 70%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.2rem;
 }
 .post-date {
-  height: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+  font-size: small;
+  color: lightgrey;
+}
+
+.post-date-format {
+  font-weight: bold;
+  color: white;
 }
 
 .post-metrics {
   display: flex;
-  border: 1px solid black;
-  height: 20%;
+  /* border: 1px solid black; */
 }
 
 .post-metrics-box {
   text-align: center;
   justify-content: center;
   flex: 1;
-  margin: 0 0.1rem;
-  border: 1px solid #000;
+  margin: 0 0.2rem;
+  /* border: 1px solid #000; */
   border-radius: 0.2rem;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: rgb(62, 60, 60);
 }
 
 .post-metrics-box:first-child {
@@ -42,11 +54,79 @@
 .post-metrics-box:last-child {
   margin-right: 0;
 }
-
-.post-details {
+.post-metrics-value {
+  font-weight: bold;
+}
+.post-metrics-label {
+  font-size: small;
+  color: lightgrey;
 }
 
 img {
+}
+.carousel-background-image {
+  position: absolute;
+  object-fit: cover;
+  filter: blur(15px);
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
+}
+.carousel-image {
+  position: relative;
+  object-fit: contain;
+  width: 100%;
+  height: 450px;
+}
+
+.carousel-no-image {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.carousel-button {
+  all: unset;
+  position: absolute;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.carousel-button.next {
+  right: 10px;
+  top: 50%;
+}
+.carousel-button.prev {
+  left: 10px;
+  top: 50%;
+}
+
+.influencer-details {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.influencer-info {
+  display: flex;
+  flex-direction: column;
+
+  .influencer-name {
+    font-weight: bold;
+    color: white;
+  }
+  .influencer-handle {
+    font-size: 0.8rem;
+    color: lightgrey;
+  }
+}
+
+.influencer-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }

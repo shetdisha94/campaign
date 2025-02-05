@@ -1,49 +1,32 @@
 import { useEffect, useState } from "react";
 import { CAMPAIGN_POST_API } from "../../utils/constants";
 import "./PostDetailsComponent.css";
+import Carousel from "./Carousel";
+import InfluencerDetails from "./InfluencerDetails";
+import useCampaingnPosts from "../../hooks/useCampaignPosts";
+import PostMetrics from "./PostMetrics";
+import { formatDate } from "../../utils/helper.js";
 
 const PostDetails = () => {
-  const [postDetails, setPostDetails] = useState([]);
-  const { images, postingDate } = postDetails;
-
-  const fetchPostDetails = async () => {
-    console.log(CAMPAIGN_POST_API);
-    const response = await fetch(CAMPAIGN_POST_API);
-    const postDetailsList = await response.json();
-
-    setPostDetails(postDetailsList);
-  };
-
-  useEffect(() => {
-    fetchPostDetails();
-    console.log(postDetails);
-  }, []);
+  const campaingnPosts = useCampaingnPosts();
 
   return (
     <>
-      {postDetails.map((post) => (
-        <div className="post-details">
+      {campaingnPosts.map((post) => (
+        <div key={post.id} className="post-details">
           <div className="post-images">
-            {post.images.length ? (
-              <img src={post.images[0]} alt="image" className="" />
-            ) : (
-              "image"
-            )}
+            <Carousel post={post} />
+            <InfluencerDetails post={post} />
           </div>
-          <div className="post-date">Posted on {post.postingDate}</div>
+
+          <div className="post-date">
+            Posted on &nbsp;
+            <span className="post-date-format">
+              {formatDate(post.postingDate)}
+            </span>
+          </div>
           <div className="post-metrics">
-            <div className="post-metrics-box">
-              <div>{post.stats.impressions}</div>
-              <div>IMPRESSIONS</div>
-            </div>
-            <div className="post-metrics-box">
-              <div>{post.stats.reach}</div>
-              <div>REACH</div>
-            </div>
-            <div className="post-metrics-box">
-              <div>{post.stats.engagement} %</div>
-              <div>ENGAGEMENT</div>
-            </div>
+            <PostMetrics metrics={post?.stats} />
           </div>
         </div>
       ))}
