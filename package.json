@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "CampaignCraze is for displaying the posts that an influencer has added to a campaign.",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "Jest"
@@ -20,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/shetdisha94/campaign-craze/issues"
   },
-  "homepage": "https://github.com/shetdisha94/campaign-craze#readme",
+  "homepage": "https://shetdisha94.github.io/campaign-craze",
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "parcel": "^2.13.3",
