@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-app {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  gap: 2rem;
+  background-color: rgb(39, 37, 37);
+  color: white;
+  padding: 2rem;
+}

@@ -2,7 +2,6 @@
   "name": "campaign-craze",
   "version": "1.0.0",
   "description": "CampaignCraze is for displaying the posts that an influencer has added to a campaign.",
-  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -27,6 +26,7 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   }
