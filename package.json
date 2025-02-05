@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/shetdisha94/campaign-craze#readme",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.13.3",
     "process": "^0.11.10"
   },
