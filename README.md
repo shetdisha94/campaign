@@ -1,5 +1,7 @@
 # campaign-craze
 
-CampaignCraze is for displaying the posts that an influencer has added to a campaign.
+CampaignCraze is a simple react app for displaying the posts that an influencer has added to a campaign.
 
-# https://github.com/shetdisha94/campaign-craze
+Tech stack used: React, JavaScript, CSS Grid, Parcel
+
+### https://shetdisha94.github.io/campaign-craze/
