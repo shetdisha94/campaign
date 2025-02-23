@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "CampaignCraze is for displaying the posts that an influencer has added to a campaign.",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build index.html",
     "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --public-url ./",
     "test": "Jest"
   },
   "repository": {

@@ -1,8 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import styles from "./media.module.css";
 
-const Carousel = ({ post }) => {
+const Media = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { images } = post;
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -18,29 +18,36 @@ const Carousel = ({ post }) => {
         <>
           <div
             style={{ backgroundImage: `url(${images[currentIndex]})` }}
-            className="carousel-background-image"
+            className={styles.carouselBackgroundImage}
           />
           <img
             src={images[currentIndex]}
             alt="image"
-            className="carousel-image"
+            className={styles.carouselImage}
+            loading="lazy"
           />
           {currentIndex < images.length - 1 && (
-            <button onClick={handleNext} className="carousel-button next">
+            <button
+              onClick={handleNext}
+              className={`${styles.carouselButton} ${styles.carouselButtonNext}`}
+            >
               {">"}
             </button>
           )}
           {currentIndex > 0 && (
-            <button onClick={handlePrev} className="carousel-button prev">
+            <button
+              onClick={handlePrev}
+              className={`${styles.carouselButton} ${styles.carouselButtonPrev}`}
+            >
               {"<"}
             </button>
           )}
         </>
       ) : (
-        <div className="carousel-no-image"></div>
+        <div className={styles.carouselNoImage}></div>
       )}
     </>
   );
 };
 
-export default Carousel;
+export default Media;

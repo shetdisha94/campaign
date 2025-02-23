@@ -1,13 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import PostDetails from "./components/PostDetails/PostDetailsComponent";
+import Feed from "./components/feed/feed";
 
 const Main = () => {
-  return (
-    <div className="main-app">
-      <PostDetails />
-    </div>
-  );
+  return <Feed />;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

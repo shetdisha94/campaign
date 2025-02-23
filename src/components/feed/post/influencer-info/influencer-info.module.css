@@ -1,0 +1,28 @@
+.influencerDetails {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.influencerInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.influencerName {
+  font-weight: bold;
+  color: white;
+}
+
+.influencerHandle {
+  font-size: 0.8rem;
+  color: lightgrey;
+}
+
+.influencerPhoto {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
