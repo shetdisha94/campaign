@@ -1,0 +1,34 @@
+.postMetrics {
+  display: flex;
+}
+
+.postMetricsBox {
+  text-align: center;
+  justify-content: center;
+  flex: 1;
+  margin: 0 0.2rem;
+  border-radius: 0.2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(62, 60, 60);
+}
+
+.postMetricsBox:first-child {
+  margin-left: 0;
+}
+
+.postMetricsBox:last-child {
+  margin-right: 0;
+}
+
+.postMetricsValue {
+  font-weight: bold;
+}
+
+.postMetricsLabel {
+  font-size: small;
+  color: lightgrey;
+}

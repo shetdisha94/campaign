@@ -1,0 +1,27 @@
+.postDetails {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.postImages {
+  width: inherit;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.2rem;
+}
+
+.postDate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: small;
+  color: lightgrey;
+}
+
+.postDateFormat {
+  font-weight: bold;
+  color: white;
+}

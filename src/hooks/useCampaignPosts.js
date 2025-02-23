@@ -3,7 +3,6 @@ import { CAMPAIGN_POST_API } from "../utils/constants";
 
 const useCampaingnPosts = () => {
   const [postDetails, setPostDetails] = useState([]);
-  const { images, postingDate } = postDetails;
 
   const fetchPostDetails = async () => {
     console.log(CAMPAIGN_POST_API);
@@ -15,7 +14,6 @@ const useCampaingnPosts = () => {
 
   useEffect(() => {
     fetchPostDetails();
-    console.log(postDetails);
   }, []);
 
   return postDetails;
