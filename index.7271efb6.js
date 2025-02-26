@@ -18630,7 +18630,7 @@ const Feed = ()=>{
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: "/campaign-logo.svg"
+                                src: "./campaign-logo.svg"
                             }, void 0, false, {
                                 fileName: "src/components/feed/feed.js",
                                 lineNumber: 31,
@@ -18700,7 +18700,7 @@ $RefreshReg$(_c, "Feed");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./feed.module.css":"lWAD2","./post/post.js":"dvmoi","../../hooks/useCampaignPosts.js":"70HMl","../ui/shimmer-post/shimmer-post.js":"6XUJQ","../ui/theme/theme-selector.js":"1aYrL","../../contexts/theme-context.js":"hxYWo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lWAD2":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./feed.module.css":"lWAD2","./post/post.js":"dvmoi","../../hooks/useCampaignPosts.js":"70HMl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../ui/shimmer-post/shimmer-post.js":"6XUJQ","../ui/theme/theme-selector.js":"1aYrL","../../contexts/theme-context.js":"hxYWo"}],"lWAD2":[function(require,module,exports,__globalThis) {
 module.exports["feedContainer"] = `UDChZG_feedContainer`;
 module.exports["headerContainer"] = `UDChZG_headerContainer`;
 module.exports["mainContainer"] = `UDChZG_mainContainer`;
@@ -19144,7 +19144,7 @@ const Media = ({ images })=>{
                     className: `${_mediaModuleCss.carouselButton} ${_mediaModuleCss.carouselButtonNext}`,
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: _mediaModuleCss.rightChevron,
-                        src: "/chevron-circle-left-solid.svg",
+                        src: "./chevron-circle-left-solid.svg",
                         alt: ">"
                     }, void 0, false, {
                         fileName: "src/components/feed/post/media/media.js",
@@ -19160,7 +19160,7 @@ const Media = ({ images })=>{
                     onClick: handlePrev,
                     className: `${_mediaModuleCss.carouselButton} ${_mediaModuleCss.carouselButtonPrev}`,
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: "/chevron-circle-left-solid.svg",
+                        src: "./chevron-circle-left-solid.svg",
                         alt: "<"
                     }, void 0, false, {
                         fileName: "src/components/feed/post/media/media.js",
@@ -19201,7 +19201,7 @@ $RefreshReg$(_c, "Media");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./media.module.css":"cTm4C","react-intersection-observer":"f9ked","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cTm4C":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./media.module.css":"cTm4C","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-intersection-observer":"f9ked"}],"cTm4C":[function(require,module,exports,__globalThis) {
 module.exports["carouselBackgroundImage"] = `LiOmBa_carouselBackgroundImage`;
 module.exports["carouselButton"] = `LiOmBa_carouselButton`;
 module.exports["carouselButtonNext"] = `LiOmBa_carouselButtonNext`;
@@ -19740,14 +19740,14 @@ const ThemeSelector = ()=>{
             className: _themeSelectorModuleCss.themeButton,
             onClick: handleTheme,
             children: theme === "dark" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "/sun.svg",
+                src: "./sun.svg",
                 alt: "light mode"
             }, void 0, false, {
                 fileName: "src/components/ui/theme/theme-selector.js",
                 lineNumber: 13,
                 columnNumber: 11
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "/moon.svg",
+                src: "./moon.svg",
                 alt: "dark mode"
             }, void 0, false, {
                 fileName: "src/components/ui/theme/theme-selector.js",
