@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./post-metrics.module.css";
+import * as styles from "./post-metrics.module.css";
 
 const PostMetrics = ({ metrics }) => {
   const formatNumber = (value) => {

@@ -18,10 +18,10 @@
   justify-content: center;
   padding: 1rem;
   font-size: small;
-  color: lightgrey;
+  color: var(--text-color);
 }
 
 .postDateFormat {
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
 }
