@@ -1,5 +1,5 @@
 {
-  "name": "campaign-craze",
+  "name": "campaign",
   "version": "1.0.0",
   "description": "CampaignCraze is for displaying the posts that an influencer has added to a campaign.",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shetdisha94/campaign-craze.git"
+    "url": "git+https://github.com/shetdisha94/campaign.git"
   },
   "keywords": [
     "campaign",
@@ -20,9 +20,9 @@
   "author": "Disha shet",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shetdisha94/campaign-craze/issues"
+    "url": "https://github.com/shetdisha94/campaign/issues"
   },
-  "homepage": "https://shetdisha94.github.io/campaign-craze",
+  "homepage": "https://shetdisha94.github.io/campaign",
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "parcel": "^2.13.3",
