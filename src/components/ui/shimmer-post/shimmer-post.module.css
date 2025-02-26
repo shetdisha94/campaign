@@ -1,0 +1,39 @@
+.postDetails {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.postImages {
+  width: inherit;
+  height: 450px;
+  border-radius: 0.2rem;
+}
+
+.postDate {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+}
+
+.postMetrics {
+  display: flex;
+}
+
+.postMetricsBox {
+  flex: 1;
+  margin: 0 0.2rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.postMetricsBox:first-child {
+  margin-left: 0;
+}
+
+.postMetricsBox:last-child {
+  margin-right: 0;
+}

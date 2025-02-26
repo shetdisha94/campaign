@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import styles from "./media.module.css";
+import * as styles from "./media.module.css";
+import { useInView } from "react-intersection-observer";
 
 const Media = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { ref: postRef, inView: postInView } = useInView();
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -13,8 +15,8 @@ const Media = ({ images }) => {
   };
 
   return (
-    <>
-      {images.length ? (
+    <div ref={postRef}>
+      {postInView && images.length ? (
         <>
           <div
             style={{ backgroundImage: `url(${images[currentIndex]})` }}
@@ -31,7 +33,11 @@ const Media = ({ images }) => {
               onClick={handleNext}
               className={`${styles.carouselButton} ${styles.carouselButtonNext}`}
             >
-              {">"}
+              <img
+                className={styles.rightChevron}
+                src="/chevron-circle-left-solid.svg"
+                alt=">"
+              />
             </button>
           )}
           {currentIndex > 0 && (
@@ -39,14 +45,14 @@ const Media = ({ images }) => {
               onClick={handlePrev}
               className={`${styles.carouselButton} ${styles.carouselButtonPrev}`}
             >
-              {"<"}
+              <img src="/chevron-circle-left-solid.svg" alt="<" />
             </button>
           )}
         </>
       ) : (
         <div className={styles.carouselNoImage}></div>
       )}
-    </>
+    </div>
   );
 };
 

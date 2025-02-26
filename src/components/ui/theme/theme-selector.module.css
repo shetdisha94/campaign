@@ -1,0 +1,21 @@
+/* ThemeSelector.css */
+.themeSelector {
+  .themeButton {
+    cursor: pointer;
+    border: none;
+    all: unset;
+    /* transform: scale(2); */
+
+    &:hover {
+      background-color: var(--primary-color);
+      border-radius: 50%;
+    }
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+}

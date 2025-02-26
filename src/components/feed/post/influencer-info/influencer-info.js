@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./influencer-info.module.css";
+import * as styles from "./influencer-info.module.css";
 
 const InfluencerInfo = ({ post }) => {
   const { influencerName, handle, influencerImage } = post;
@@ -7,7 +7,7 @@ const InfluencerInfo = ({ post }) => {
   console.log(influencerName, handle, influencerImage);
   return (
     <div className={styles.influencerDetails}>
-      <div className={styles.influencerPhotoInfo}>
+      <div>
         <img src={influencerImage} alt="" className={styles.influencerPhoto} />
       </div>
       <div className={styles.influencerInfo}>
