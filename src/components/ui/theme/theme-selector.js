@@ -10,9 +10,9 @@ const ThemeSelector = () => {
     <div className={styles.themeSelector}>
       <button className={styles.themeButton} onClick={handleTheme}>
         {theme === "dark" ? (
-          <img src="/sun.svg" alt="light mode" />
+          <img src="./sun.svg" alt="light mode" />
         ) : (
-          <img src="/moon.svg" alt="dark mode" />
+          <img src="./moon.svg" alt="dark mode" />
         )}
       </button>
     </div>

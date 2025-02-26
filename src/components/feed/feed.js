@@ -28,7 +28,7 @@ const Feed = () => {
       <ThemeProvider>
         <div className={styles.headerContainer}>
           <div>
-            <img src="/campaign-logo.svg" />
+            <img src="./campaign-logo.svg" />
           </div>
 
           <ThemeSelector />

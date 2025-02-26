@@ -35,7 +35,7 @@ const Media = ({ images }) => {
             >
               <img
                 className={styles.rightChevron}
-                src="/chevron-circle-left-solid.svg"
+                src="./chevron-circle-left-solid.svg"
                 alt=">"
               />
             </button>
@@ -45,7 +45,7 @@ const Media = ({ images }) => {
               onClick={handlePrev}
               className={`${styles.carouselButton} ${styles.carouselButtonPrev}`}
             >
-              <img src="/chevron-circle-left-solid.svg" alt="<" />
+              <img src="./chevron-circle-left-solid.svg" alt="<" />
             </button>
           )}
         </>
